@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tags Речник</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f8f9fa;
+        }
+        h1 {
+            color: #007bff;
+        }
+        .dropdown {
+            margin: 10px 0;
+        }
+        .dropdown-content {
+            display: none;
+            border: 1px solid #ccc;
+            background-color: #fff;
+            padding: 10px;
+            margin-top: 5px;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        input[type="text"] {
+            margin: 20px 0;
+            padding: 10px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .tag-list {
+            margin: 20px 0;
+        }
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 0.8em;
+        }
+        advancedTags {
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>HTML Tags Речник</h1>
+
+    <input type="text" id="searchBar" placeholder="Търсене на тагове..." onkeyup="filterTags()">
+
+    <div class="dropdown">
+        <h2>Основни HTML тагове</h2>
+        <div class="dropdown-content" id="basicTags">
+            <ul>
+                <li>&lt;!DOCTYPE&gt;: Определя типа на документа и версията на HTML.</li>
+                <li>&lt;html&gt;: Главният елемент, който обхваща цялото съдържание на страницата.</li>
+                <li>&lt;head&gt;: Съдържа мета-информация за документа.</li>
+                <li>&lt;title&gt;: Определя заглавието на документа.</li>
+                <li>&lt;meta&gt;: Предоставя метаданни за документа.</li>
+                <li>&lt;link&gt;: Свързва външни ресурси като стилове (CSS).</li>
+                <li>&lt;style&gt;: Вгражда CSS стилове директно в HTML документ.</li>
+                <li>&lt;body&gt;: Съдържа съдържанието на документа.</li>
+                <li>&lt;h1&gt; до &lt;h6&gt;: Тагове за заглавия.</li>
+                <li>&lt;p&gt;: Определя параграф.</li>
+                <li>&lt;br&gt;: Вмъква нов ред.</li>
+                <li>&lt;hr&gt;: Вмъква хоризонтална линия.</li>
+                <li>&lt;a&gt;: Създава хипервръзка.</li>
+                <li>&lt;img&gt;: Вмъква изображение.</li>
+                <li>&lt;ul&gt;: Неномериран списък.</li>
+                <li>&lt;ol&gt;: Номериран списък.</li>
+                <li>&lt;li&gt;: Елемент от списък.</li>
+                <li>&lt;strong&gt;: Прави текста удебелен.</li>
+                <li>&lt;b&gt;: Прави текста удебелен (несемантично).</li>
+                <li>&lt;em&gt;: Подчертава текст.</li>
+                <li>&lt;i&gt;: Прави текста наклонен.</li>
+                <li>&lt;div&gt;: Генерален контейнер за структуриране на съдържание.</li>
+                <li>&lt;span&gt;: Генерален контейнер в линията на текста.</li>
+                <li>&lt;input&gt;: Използва се за създаване на формови полета.</li>
+                <li>&lt;form&gt;: Обгръща елементи от форма.</li>
+                <li>&lt;button&gt;: Създава бутон.</li>
+                <li>&lt;label&gt;: Маркира поле за въвеждане.</li>
+                <li>&lt;textarea&gt;: Създава много редово поле за текст.</li>
+                <li>&lt;select&gt;: Създава падащо меню.</li>
+                <li>&lt;option&gt;: Определя опции в падащо меню.</li>
+                <li>&lt;table&gt;: Създава таблица.</li>
+                <li>&lt;thead&gt;: Определя заглавната част на таблица.</li>
+                <li>&lt;tbody&gt;: Определя тялото на таблица.</li>
+                <li>&lt;tr&gt;: Определя ред в таблица.</li>
+                <li>&lt;th&gt;: Определя клетка заглавие в таблица.</li>
+                <li>&lt;td&gt;: Определя клетка с данни в таблица.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <h2>Средно ниво HTML тагове</h2>
+        <div class="dropdown-content" id="intermediateTags">
+            <ol>
+                <li>&lt;section&gt;: Определя секция от съдържание.</li>
+                <li>&lt;article&gt;: Представлява самостоятелно съдържание.</li>
+                <li>&lt;aside&gt;: Определя свързано съдържание.</li>
+                <li>&lt;header&gt;: Определя заглавие за документ или секция.</li>
+                <li>&lt;footer&gt;: Определя долна част за документ или секция.</li>
+                <li>&lt;nav&gt;: Определя навигационни връзки.</li>
+                <li>&lt;figure&gt;: Обгръща медия.</li>
+                <li>&lt;figcaption&gt;: Определя надпис за <code>&lt;figure&gt;</code>.</li>
+                <li>&lt;blockquote&gt;: Определя блок от цитиран текст.</li>
+                <li>&lt;cite&gt;: Определя цитат.</li>
+                <li>&lt;code&gt;: Показва блок от код.</li>
+                <li>&lt;pre&gt;: Определя предварително форматиран текст.</li>
+                <li>&lt;time&gt;: Определя конкретно време или дата.</li>
+                <li>&lt;audio&gt;: Вгражда аудио съдържание.</li>
+                <li>&lt;video&gt;: Вгражда видео съдържание.</li>
+                <li>&lt;source&gt;: Определя множество медийни източници.</li>
+                <li>&lt;track&gt;: Определя текстови записи.</li>
+                <li>&lt;canvas&gt;: Осигурява площ за изобразяване на графика.</li>
+                <li>&lt;svg&gt;: Определя векторна графика.</li>
+                <li>&lt;iframe&gt;: Вмъква друг HTML документ.</li>
+                <li>&lt;details&gt;: Създава сгъваем елемент.</li>
+                <li>&lt;summary&gt;: Определя заглавие за <code>&lt;details&gt;</code>.</li>
+                <li>&lt;progress&gt;: Показва лента за прогрес.</li>
+                <li>&lt;meter&gt;: Представлява скаларно измерване.</li>
+                <li>&lt;map&gt;: Определя карта с изображения.</li>
+                <li>&lt;area&gt;: Определя зона в карта с изображения.</li>
+                <li>&lt;object&gt;: Вгражда външни ресурси.</li>
+                <li>&lt;embed&gt;: Вгражда външно съдържание.</li>
+                <li>&lt;param&gt;: Определя параметри за плъгини.</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <h2 style="color: orange;">Напреднали HTML тагове</h2>
+        <div class="dropdown-content" id="advancedTags">
+            <ul>
+                <li>&lt;template&gt;: Определя блок от HTML, който може да бъде клониран.</li>
+                <li>&lt;slot&gt;: Използва се в Web Components за дефиниране на слотове.</li>
+                <li>&lt;shadow&gt;: Използва се в Shadow DOM за инкапсулиране на стилове.</li>
+                <li>&lt;dialog&gt;: Създава модален или диалогов прозорец.</li>
+                <li>&lt;output&gt;: Показва резултат от изчисление.</li>
+                <li>&lt;picture&gt;: Осигурява множество източници за изображение.</li>
+                <li>&lt;noscript&gt;: Определя съдържание, ако JavaScript е деактивиран.</li>
+                <li>&lt;wbr&gt;: Предоставя подсказка за прекъсване на текста.</li>
+                <li>&lt;bdi&gt;: Изолира текст с различна посока.</li>
+                <li>&lt;bdo&gt;: Изменя посоката на текста.</li>
+                <li>&lt;ruby&gt;: Поддържа източноазиатска типография.</li>
+                <li>&lt;rt&gt;: Определя произношението на символи.</li>
+                <li>&lt;rp&gt;: Предоставя съдържание за браузъри, които не поддържат <code>&lt;ruby&gt;</code>.</li>
+                <li>&lt;data&gt;: Свързва машинно четими данни.</li>
+                <li>&lt;mark&gt;: Подчертава текст.</li>
+                <li>&lt;abbr&gt;: Определя съкращение или акроним.</li>
+                <li>&lt;keygen&gt;: Улеснява удостоверяването на потребител (остарял).</li>
+                <li>&lt;base&gt;: Определя базов URL за относителни връзки.</li>
+                <li>&lt;address&gt;: Представлява контактна информация.</li>
+            </ul>
+        </div>
+    </div>
+<img src="https://i.ytimg.com/vi/C9axXjR6XPU/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLA26pBkBPSr8eWmFQ-aVO4ocmR5bQ" alt="lada tate" class="center".center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }>
+    <div class="dropdown">
+        <h2>Остарели или премахнати тагове</h2>
+        <div class="dropdown-content" id="deprecatedTags">
+            <ul>
+                <li>&lt;center&gt;: Центрира съдържанието (използвайте CSS вместо това).</li>
+                <li>&lt;font&gt;: Определя размера, цвета и типа на шрифта (използвайте CSS вместо това).</li>
+                <li>&lt;marquee&gt;: Създава движещ се текст (остарял).</li>
+                <li>&lt;acronym&gt;: Определя акроним (използвайте <code>&lt;abbr&gt;</code> вместо това).</li>
+                <li>&lt;big&gt;: Прави текста по-голям (използвайте CSS вместо това).</li>
+                <li>&lt;blink&gt;: Прави текста мигащ (не се поддържа от съвременните браузъри).</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 HTML Tags Речник. Всички права запазени.</p>
+    </footer>
+
+    <script>
+        function filterTags() {
+            const input = document.getElementById('searchBar');
+            const filter = input.value.toLowerCase();
+            const dropdownContents = document.querySelectorAll('.dropdown-content');
+
+            dropdownContents.forEach(dropdown => {
+                const items = dropdown.getElementsByTagName('li');
+                let hasMatch = false;
+
+                for (let i = 0; i < items.length; i++) {
+                    const textValue = items[i].textContent || items[i].innerText;
+                    if (textValue.toLowerCase().indexOf(filter) > -1) {
+                        items[i].style.display = "";
+                        hasMatch = true;
+                    } else {
+                        items[i].style.display = "none";
+                    }
+                }
+
+                dropdown.style.display = hasMatch ? 'block' : 'none';
+            });
+        }
+    </script>
+</body>
+</html>

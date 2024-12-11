@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+}
+
+.gallery a {
+    margin: 10px;
+    border: 2px solid #ddd;
+    overflow: hidden;
+    display: block;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.gallery a:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Hide the text by default */
+.image-text {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 5px;
+    font-size: 16px;
+    display: none; /* Initially hidden */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Show the text when hovering over the image */
+.gallery a:hover .image-text {
+    display: block;
+    opacity: 1;
+}
+
+h1 {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+}
